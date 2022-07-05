@@ -6,16 +6,23 @@
 
 
 
+
+  @font-face {
+    font-family: Norse-Bold;
+    src: url("Norse-Bold.otf") format("opentype");
+}
 .grid-container{
     display:grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 70vh 30vh;
+    border-style: black;
     
     
 }
 
 .grid-item{
-    background-color: white
+    background-color: white;
+    border-style: black;
     
 }
 
@@ -24,6 +31,7 @@
     grid-row: 1 / 6;
     background-image: url(leaf.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     object-fit: cover;
 }
 
@@ -35,6 +43,81 @@
 .bottom-right{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color: gray;
 
 }
 
+.validation{
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 200px;
+    margin-right: 200px;
+    margin-left: 50px;
+    
+}
+
+h1,h2{
+    margin-left: 10px;
+}
+
+.button{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar{
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 80px;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin-top: 220px;
+    height: 100px;
+    
+
+}
+
+.odin-image{
+    max-width: 100%;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+.first-last, .email-phone , .password{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+input, label {
+    display: block;
+}
+
+input{
+    width: 250px;
+    margin-top: 10px;
+}
+
+button{
+    background-color: #596D48;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 1rem;
+    border-style: solid;
+
+}
+
+legend{
+    font-size: 30px;
+    margin-left: 10px;
+}
