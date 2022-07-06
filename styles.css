@@ -182,5 +182,9 @@ input:invalid {
   }
   
   input:valid {
-    border-color: green;
+    border-color: black
+  }
+
+  input:focus{
+      border-color: blue;
   }
