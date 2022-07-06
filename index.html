@@ -17,14 +17,17 @@
                 
             </div>
         </div>
+        <div class="grid-item top-right">
+            <div class="header">This is not a real online service! You know you need something like this 
+                in your life to help you realize your deepest dreams. <br>sign up now to get started
+            </div>
+            <div class="want-to">You know you want to</div>
+           
+        </div>
         <div class="grid-item form-part">
             <div class="validation">
-                <h1>This is not a real online service! You know you need something like this 
-                    in your life to help you realize your deepest dreams. sign up not to get started
-                </h1>
-                <h2>You know you want to</h2>
-                <form>
-                    <legend>Lets do this!</legend>
+                <div class="form-header">You can do it!</div>
+            <form>
                 <div class="first-last">
                     <p>
                         <label for="first-name">
@@ -44,7 +47,7 @@
                     <label for="mail">
                         <span>Email</span>
                     </label>
-                    <input type="email" id="mail" name="usermail">
+                    <input type="email" id="mail" name="usermail" title="Please enter a valid email Address">
                 </p>
                 <p>
                     <label for="phone">
@@ -58,16 +61,16 @@
                         <label for="pwd">
                             <span>Password</span>
                         </label>
-                        <input type="password" id="pwd" name="password">
+                        <input type="password" id="pwd" name="password" required>
                     </p>
                     <p>
                         <label for="c-pwd">
                             <span> Confirm Password</span>
                         </label>
-                        <input type="password" id="c-pwd" name="password">
+                        <input type="password" id="c-pwd" name="password" required>
                     </p>
                 </div>
-                </form>
+                
 
             </div>
 
@@ -82,6 +85,6 @@
             
         </div>
     </div>
-    
+    </form>
 </body>
 </html>
